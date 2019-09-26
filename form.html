@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <title></title>
+    <style type="text/css">
+    td{color:Maroon;}
+    </style>
+</head>
+<body bgcolor="#ccffff">
+    <table border="0" cellpadding ="8" width="600" align="left" bgcolor="#FFC0C0">
+        <center>
+            <caption align="top">
+                <h2>Registration form</h2>
+            </caption>
+            <form name="testform">
+                <font face="georgia" size="4">
+                    <tr>
+                        <td>Firstname</td>
+                        <td>
+                            <input type="text" name="Fname" size="30" maxlength="30" value="" align="middle" style="background-color=#ffffff; border-color:#800000" tabindex="1" required autofocus/>
+                            <span id="demo" style="color:red;"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>Lastname</td>
+                            <td>
+                                <input type="text" name="Lname" size="30" maxlength="30" value="" align="middle" style="border-color=#800000; font-family:Georgia, background-color:#ffffff" tabindex="1"/>
+                                <span id="demo" style="color:red;"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Education Type</td>
+                            <td>
+                                <input type="checkbox" name="Education" value="Graduate" tabindex="3"/>Graduate
+                                <input type="checkbox" name="Education1" value=" Post Graduate" tabindex="4"/>Post Graduate"
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Gender</td>
+                            <td>
+                                    <input type="radio" name="Gender" value="Male" tabindex="5" checked/>Male
+                                    <input type="radio" name="Gender" value="Female" tabindex="6"checked/>Female
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Salary</td>
+                            <td>
+                                <input type="Password" name="Salary" size="10" maxlength="10" tabindex="7"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Comments</td>
+                            <td>
+                                <textarea rows="5" cols="50" wrap="physical" tabindex="8"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>State</td>
+                            <td> <select name="state" tabindex="9">
+                                <option>Andhrapradesh</option>
+                                <option>Bihar</option>
+                                <option>Himachalpradesh</option>
+                                <option>Karnataka</option>
+                                <option>Kerala</option>
+                                <option>Tamilnadu</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Programming Languages</td>
+                            <td><input list="Languages"/>
+                            <datalist id="Languages">
+                                <option value="COBOL"></option>
+                                <option value="Fortran"></option>
+                                <option value="C"></option>
+                                <option value="C++"></option>
+                                <option value="Java"></option>
+                                <option value="Python"></option>
+                                <option value="PHP"></option>
+                                <option value="C#"></option>
+                                <option value="Visual Basic 6.0"></option>
+                            </datalist></td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Select Color</td>
+                            <td>
+                                <input id="background-color" type="color" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Meeting Date</td>
+                            <td>
+                                <input id="meeting" type="date"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Meeting date & Time</td>
+                            <td>
+                                    <input id="mdate" type="datetime-local" name="mdate">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>
+                                    <input id="email" type="email"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Web Site</td>
+                            <td>
+                                <input type="url" name="website">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" align="center">
+                                <input type="Submit" value="Submit" tabindex="10"/>
+                                <input type="Reset" value="Reset" tabindex="11"/>
+
+                            </td>
+                        </tr>
+                </font>
+            </form>
+        </center>
+    </table>
+</body>
